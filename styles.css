@@ -1,0 +1,281 @@
+html, body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: 1px solid gray; 
+  outline: none; 
+  background-color: #66BDFF; 
+  color: black; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color:lightgrey; 
+}
+
+.logo{
+  width:30%; 
+  height:30%; 
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border: 1px solid gray;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.header{
+  background-color: #66BDFF;
+  border-bottom: 1px solid grey;
+  vertical-align: center;
+}
+
+.Titel {
+    background-color: grey;
+    color: white;
+    width: auto;
+    padding: 16px;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius : 20px 20px 20px 0px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .titel-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .titel-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .Titel-content a:hover {
+    background-color: grey}
+  
+  .dropdown:hover .titel-content {
+    display: block;
+  }
+  
+  .dropdown:hover .Titel {
+    background-color: lightgrey;
+  }
+
+  .navigation{
+      float: right;
+      margin-right: 10px;
+      margin-top: 22px;
+  }
+
+  .slide{
+      align-items: center;
+      float: both;
+      display: block;
+      padding-top: 80px;
+  }
+
+  * {
+    box-sizing:border-box
+  }
+
+.slideshow-container {
+  max-width: 2000px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.selektor{
+  text-align:center
+}
+
+.landingpage{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 4%;
+  margin-bottom: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.5;
+}
+
+.content-wrapper {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+}
+
+.content-block-filler {
+  flex: 1 0 100%;
+}
+
+.content-block {
+  padding: 10px;
+}
+
+.content-block-text {
+  flex: 1 1 auto;
+  line-height: 1.5;
+}
+.content-block-text p {
+  font-size: 150%;
+  text-align: justify;
+  margin: 0;
+}
+
+.content-block-img {
+  flex: 1 0 50%;
+}
+
+.content-block-img img{
+  max-width:100%;
+  max-height:100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.wrapper{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.breitbild-text{
+  font-size: 150%;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.panorama{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+footer{
+  text-align: center;
+  line-height: 1.25;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 25px;
+  background-color: #66BDFF;
+  border-top: 1px solid grey;
+}
